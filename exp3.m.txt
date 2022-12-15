@@ -1,0 +1,13 @@
+I = imread('coins.png');
+Ibw = imbinarize(I);
+Ibw = imfill(Ibw,'holes');
+Ilabel = logical(Ibw);
+stat = regionprops(Ilabel,'centroid');
+imshow(I); hold on;
+for x = 1: numel(stat)
+    plot(stat(x).Centroid(1),stat(x).Centroid(2),'ro');
+end
+hold off;
+
+info = imfinfo("coins.png");
+disp(info);

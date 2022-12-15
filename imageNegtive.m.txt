@@ -1,0 +1,12 @@
+skI = imread("people.jpeg"); 
+
+subplot(1, 2, 1);
+imshow(skI);
+title("original image");
+  
+L = 2 ^ 8;    
+  
+neg = (L - 1) - skI;
+subplot(1, 2, 2);
+imshow(neg);
+title("negative image")

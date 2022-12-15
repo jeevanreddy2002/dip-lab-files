@@ -1,0 +1,35 @@
+A = [1 2 3 4];
+B = [2 6 7 8];
+C = A + B;
+D = A - B;
+E = A .* B;
+F = A ./ B;
+Q = transpose(A);
+R = transpose(B);
+disp(C);
+disp(D);
+disp(E);
+disp(F);
+disp(Q);
+disp(R);
+
+G = [1 2 ; 3 4];
+H = [5 6 ; 7 8];
+I = G + H;
+J = G - H;
+K = G .* H;
+L = G ./ H;
+M = transpose(G);
+N = transpose(H);
+O = inv(G);
+P = inv(H);
+
+disp(I);
+disp(J);
+disp(K);
+disp(L);
+disp(M);
+disp(N);
+disp(O);
+disp(P);
+

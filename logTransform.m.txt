@@ -1,0 +1,16 @@
+I = imread("people.jpeg");
+
+subplot(2,2,1)
+imshow(I)
+title('original image')
+subplot(2,2,2)
+imhist(I, 64)
+title('before hist eq')
+
+J = histeq(I);
+subplot(2,2,3)
+imshow(J)
+title('histogram eq')
+subplot(2,2,4)
+imhist(J,64)
+title('after hist eq')
