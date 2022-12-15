@@ -1,3 +1,4 @@
+%% install "Statistics and Machine Learning Toolbox" app
 load examgrades
 x = grades(:,1);
 pd = fitdist(x,'Normal');
